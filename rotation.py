@@ -17,3 +17,6 @@ after creating this matrix we have to give this matrix to cv2.warpAffine() (just
 width = img.shape[1]
 height =  img.shape[0]
 M = cv2.getRotationMatrix2D((width/2,height/2),60,1.0)
+rotated_img = cv2.warpAffine(img,M,(img.shape[1],img.shape[0]))
+cv2.imshow("rotated_img",rotated_img)
+cv2.waitKey(0)

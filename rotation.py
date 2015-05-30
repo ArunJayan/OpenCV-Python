@@ -21,10 +21,10 @@ rotated_img = cv2.warpAffine(img,M,(img.shape[1],img.shape[0]))
 cv2.imshow("rotated_img",rotated_img)
 cv2.waitKey(0)
 
-img2 = cv2.imread("images/trex.png)
+img2 = cv2.imread("images/trex.png")
 cv2.imshow("trex.png",img2)
 
-M = cv2.getRotationMatrix2D((0,0),-70,2.0)
-rotated_img2 = cv2.warpAffine(img2,M,(img2.shape[1],img2.shape[0]))
+M = cv2.getRotationMatrix2D((0,0),-20,1.0)
+rotated_img2 = cv2.warpAffine(img2,M,(img2.shape[1],img2.shape[0])) 	
 cv2.imshow("rotated_img2",rotated_img2)
 cv2.waitKey(0)

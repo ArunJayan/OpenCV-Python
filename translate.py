@@ -1,10 +1,10 @@
-import cv2
+  <aimport cv2
 import numpy as np
 
 img = cv2.imread("images/trex.png")
 cv2.imshow("input",img)
 cv2.waitKey(0)
-#then we have to specify transilation matrix
+#then we have to specify translation matrix
 """
 transition matrix :
 [1,0,tx]
@@ -17,7 +17,7 @@ transition matrix :
 #positive values of ty will shift to down and negative to up
 """
 M = np.float32([[1,0,20],[0,1,40]])
-#using above transition matrix , we shift the image to 20 pixel right and 40 pixel to down
+#using above translation matrix , we shift the image to 20 pixel right and 40 pixel to down
 shifted = cv2.warpAffine(img,M,(img.shape[1],img.shape[0])) # we get shifted image
 cv2.imshow("Shifted",shifted)
 cv2.waitKey(0)

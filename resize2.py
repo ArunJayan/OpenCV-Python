@@ -10,4 +10,10 @@ resized_img = resize(img,height=500)
 cv2.imshow("resized_img",resized_img)
 cv2.waitKey(0)
 
-img2 = 
+img2 = cv2.imread("images/coins.png")
+cv2.imshow("coins",img2)
+cv2.waitKey(0)
+
+resized_img = resize(img,width=100)
+cv2.imshow("resized_img",resized_img)
+cv2.waitKey(0)

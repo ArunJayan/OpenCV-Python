@@ -13,3 +13,13 @@ print "width : %d\nheight : %d"%(width,height)
 
 #while resizing an image we need to keep aspect ratio of the image
 #Aspect ratio is the relationship of the width and height of the image.
+r = 500/image.shape[1]
+dim = (500,int(r*image.shape[0]))
+"""
+computing aspect ratio is performed on previous step.
+we define the new image width to be 500 pixels
+to compute ratio of new height to old height , we define r as follows
+				r = new  width / old width
+to compute new height we multiply the old height with aspect ratio r.
+				new height = r*old height
+"""

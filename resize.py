@@ -10,3 +10,6 @@ width = image.shape[1]	#current image's width
 height = image.shape[0]	#current image's height 
 
 print "width : %d\nheight : %d"%(width,height)
+
+#while resizing an image we need to keep aspect ratio of the image
+#Aspect ratio is the relationship of the width and height of the image.

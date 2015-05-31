@@ -23,3 +23,7 @@ to compute ratio of new height to old height , we define r as follows
 to compute new height we multiply the old height with aspect ratio r.
 				new height = r*old height
 """
+resized_img = cv2.resize(image,dim,interpolation = cv2.INTER_AREA)
+cv2.imwrite("resized.png",resized_img)
+cv2.imshow("resized",resized_img)
+cv2.waitKey(0)

@@ -24,7 +24,7 @@ to compute new height we multiply the old height with aspect ratio r.
 				new height = r*old height
 """
 resized_img = cv2.resize(image,dim,interpolation = cv2.INTER_AREA)
-cv2.imwrite("resized_wave.png",resized_img)
+cv2.imwrite("images/resized_wave.png",resized_img)
 cv2.imshow("resized",resized_img)
 cv2.waitKey(0)
 
@@ -35,6 +35,6 @@ r = 800/img.shape[0]#aspect_ration
 #ie., here we knows the new images's height so we have to keep the aspect ratio and find new image's width
 dim = (int(r*img.shape[1]),800)
 resized = cv2.resize(img,dim,interpolation=cv2.INTER_AREA)
-cv2.imwrite("resizd_trex.png",resized)
+cv2.imwrite("images/resizd_trex.png",resized)
 cv2.imshow("resized_trex",resized)
 cv2.waitKey(0)

@@ -30,7 +30,7 @@ cv2.waitKey(0)
 
 
 #another
-img = cv2.imread("trex.png")
+img = cv2.imread("images/trex.png")
 r = 800/img.shape[0]#aspect_ration
 #ie., here we knows the new images's height so we have to keep the aspect ratio and find new image's width
 dim = (int(r*img.shape[1]),800)

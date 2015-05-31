@@ -36,3 +36,5 @@ r = 800/img.shape[0]#aspect_ration
 dim = (int(r*img.shape[1]),800)
 resized = cv2.resize(img,dim,interpolation=cv2.INTER_AREA)
 cv2.imwrite("resizd_trex.png",resized)
+cv2.imshow("resized_trex",resized)
+cv2.waitKey(0)

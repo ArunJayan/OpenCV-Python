@@ -22,3 +22,12 @@ cv2.waitKey(0)
 rect_xor_circle = cv2.bitwise_xor(rectangle,circle)
 cv2.imshow("XOR Operation",rect_xor_circle)
 cv2.waitKey(0)
+
+circle_not = cv2.bitwise_not(circle)
+cv2.imshow("NOT operation",circle_not)
+cv2.waitKey(0)
+
+xor_not = cv2.bitwise_not(rect_xor_circle)
+cv2.imshow("NOT Operation2",xor_not)
+cv2.waitKey(0)
+	

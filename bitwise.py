@@ -14,3 +14,7 @@ cv2.waitKey(0)
 rect_and_circle = cv2.bitwise_and(rectangle,circle)
 cv2.imshow("AND operation",rect_and_circle)
 cv2.waitKey(0)
+
+rect_or_circle = cv2.bitwise_or(rectangle,circle)
+cv2.imshow("OR operation",rect_or_circle)
+cv2.waitKey(0)

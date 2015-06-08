@@ -18,3 +18,7 @@ cv2.waitKey(0)
 rect_or_circle = cv2.bitwise_or(rectangle,circle)
 cv2.imshow("OR operation",rect_or_circle)
 cv2.waitKey(0)
+
+rect_xor_circle = cv2.bitwise_xor(rectangle,circle)
+cv2.imshow("XOR Operation",rect_xor_circle)
+cv2.waitKey(0)
